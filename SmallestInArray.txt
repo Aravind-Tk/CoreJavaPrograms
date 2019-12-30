@@ -1,0 +1,25 @@
+package LeetCode2;
+
+public class SmallestInArray {
+	int small;
+	int smallestNumberArray(int[]a) {
+		for(int i=0;i<a.length-1;i++) {
+		 if(a[i]<=a[i+1]) {
+			small=a[i];
+			}
+		else {
+			small=a[i+1];
+		}
+		}
+		return small;
+	}
+
+public static void main(String [] args) {
+	int []a = {12,1,19,65,99,11,1};
+	SmallestInArray s=new SmallestInArray();
+	System.out.println(s.smallestNumberArray(a));
+    }
+
+
+}
+
